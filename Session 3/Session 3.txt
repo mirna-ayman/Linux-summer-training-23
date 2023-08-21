@@ -1,0 +1,28 @@
+ls /home/
+sudo useradd -m osc 
+ sudo passwd osc 
+ sudo groupadd osc_group 
+ sudo usermod -aG osc_group osc 
+ sudo usermod -aG sudo osc 
+ su -  osc 
+
+mkdir permission_practice 
+ cd permission_practice 
+ touch public_file.txt 
+ chmod 666 public_file.txt 
+ touch private_file.txt 
+ chmod 600 private_file.txt private_file.txt 
+ touch executable_script.sh 
+ chmod 750 executable_script.sh 
+
+ sudo chown mirna private_file.txt 
+ sudo chgrp osc_group private_file.txt 
+
+ sleep 100 & 
+ kill -s KILL 6374 
+ vim 
+ killall vim 
+ jobs 
+
+ sudo apt install neofetch 
+ sudo apt remove neofetch
