@@ -18,11 +18,12 @@ mkdir permission_practice
  sudo chown mirna private_file.txt 
  sudo chgrp osc_group private_file.txt 
 
- sleep 100 & 
- kill -s KILL 6374 
+ sleep 1000 & 
+ kill 4821
  vim 
  killall vim 
  jobs 
+ ps
 
  sudo apt install neofetch 
  sudo apt remove neofetch
